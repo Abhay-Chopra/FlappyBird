@@ -1,0 +1,48 @@
+.gameBlock{ 
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	overflow: hidden;
+}
+.airBg{
+	background: url(sky.png);
+	background-position: 37% 10%;
+	width: 500px;
+	height: 500px;
+	border: 2px black;
+	
+	/* position is relative to the parent div which is the game block */ 
+	position: absolute;
+}
+.groundBg{
+	background-color: rgb(224,215,150);
+	border-top: 3px solid green;
+	width: 500px;
+	height: 100px;
+	/* position is relative to the parent div which is the game block */ 
+	position: absolute;
+    top: 500px;
+    z-index: +1;
+}
+.faby{
+	background: url(faby.png);
+	background-position: 50% 50%;
+	width: 58px;
+	height: 40px;
+	position: absolute;
+}
+.pipe{
+	background: url(flappybird-pipe.png);
+	border-bottom: 2px solid black;
+	width: 60px;
+	height: 300px;
+	position: absolute;
+}
+.topPipe{
+	background: url(flappybird-pipe.png);
+	border-bottom: 2px solid black;
+	transform: rotate(180deg);
+	width: 60px;
+	height: 300px;
+	position: absolute;
+}
